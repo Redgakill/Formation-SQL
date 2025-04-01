@@ -28,6 +28,10 @@ MySQL utilise **SQL** pour interagir avec les bases de données. Les commandes p
 - **Gestion des utilisateurs et des permissions** :
   - `CREATE USER` / `GRANT` : Ajouter un utilisateur et lui donner des permissions.
 
+- **Mise en place de clé PRIMAIRE de tableau** :
+  - `id INT NOT NULL PRIMARY KEY` : Mise en place de la clé.
+  - `CONSTRAINT pk_"nom de la table" PRIMARY KEY (id)` : Finalisation de la mise en place de la clé avec nom.
+
 ---
 
 ### 📌 **3. Transactions et Sécurité**
@@ -36,12 +40,5 @@ MySQL utilise **SQL** pour interagir avec les bases de données. Les commandes p
   - Gestion des utilisateurs avec mots de passe.
   - Chiffrement des connexions.
   - Sauvegardes et réplication.
-
----
-
-### 📌 **4. Optimisation et Performances**
-- **Indexation** (`INDEX`) : Accélère les requêtes en facilitant la recherche.
-- **Partitionnement** : Divise les grandes tables pour améliorer l’accès aux données.
-- **Réplication** : Synchronisation entre plusieurs serveurs pour améliorer la disponibilité.
 
 ---
